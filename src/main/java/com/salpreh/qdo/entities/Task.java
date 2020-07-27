@@ -32,6 +32,6 @@ public class Task {
 	@JsonFormat(shape=Shape.STRING, pattern="yyy-MM-dd'T'HH:mm:ss")
 	private Date createdDate;
 	
-	@Field(type=FieldType.Keyword)
-	private List<String> notesId;
+	@Field(type=FieldType.Nested)
+	private List<Note> notesId;
 }
